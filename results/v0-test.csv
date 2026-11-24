@@ -1,0 +1,3 @@
+id,type,passed,ttft_s,total_s,detail
+e1,explain,True,2.55,12.59,
+d1,debug,True,2.73,10.13,

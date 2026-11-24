@@ -1,0 +1,11 @@
+{
+  "tag": "v3-big",
+  "model": "deepseek-coder:6.7b",
+  "cases": 40,
+  "exact": 14,
+  "useful": 20,
+  "useful_pct": 50,
+  "median_ms": 3344,
+  "p90_ms": 4883,
+  "under_1s_pct": 0
+}

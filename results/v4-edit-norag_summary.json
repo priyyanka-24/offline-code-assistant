@@ -1,0 +1,15 @@
+{
+  "tag": "v4-edit-norag",
+  "target": "edit",
+  "model": "deepseek-coder:6.7b",
+  "questions": "benchmark.edits",
+  "rag": false,
+  "correct": 8,
+  "total": 12,
+  "by_type": {
+    "edit": "8/12"
+  },
+  "median_first_token_s": 2.89,
+  "median_total_s": 2.89,
+  "mean_total_s": 3.35
+}

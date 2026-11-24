@@ -1,0 +1,15 @@
+{
+  "tag": "v0",
+  "target": "ollama",
+  "model": "deepseek-coder:6.7b",
+  "correct": 16,
+  "total": 18,
+  "by_type": {
+    "explain": "6/6",
+    "debug": "6/6",
+    "complete": "4/6"
+  },
+  "median_first_token_s": 2.63,
+  "median_total_s": 13.14,
+  "mean_total_s": 13.91
+}

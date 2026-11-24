@@ -1,0 +1,9 @@
+id,type,passed,ttft_s,total_s,detail
+x1,complete,True,4.75,14.35,
+x2,complete,True,1.21,16.79,
+x3,debug,False,1.13,12.16,NameError: name 'UserNotFound' is not defined
+x4,debug,False,1.28,13.76,NameError: name 'bill' is not defined
+x5,explain,False,1.21,19.83,missing: 45.50
+x6,complete,True,1.42,11.59,
+x7,complete,True,1.21,10.41,
+x8,debug,True,1.29,12.87,

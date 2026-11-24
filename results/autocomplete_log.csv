@@ -1,0 +1,3 @@
+time,event,id,latency_ms,cached,chars,language,model
+2026-11-17 05:06:21,shown,1794872181033-1,327,False,88,python,qwen2.5-coder:1.5b-base
+2026-11-24 20:20:58,shown,1795531858037-1,26,True,255,c,qwen2.5-coder:1.5b-base

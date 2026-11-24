@@ -1,0 +1,11 @@
+{
+  "tag": "v3",
+  "model": "server default (qwen2.5-coder:1.5b-base)",
+  "cases": 40,
+  "exact": 11,
+  "useful": 18,
+  "useful_pct": 45,
+  "median_ms": 346,
+  "p90_ms": 714,
+  "under_1s_pct": 98
+}

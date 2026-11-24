@@ -1,0 +1,12 @@
+{"id": "s1", "answer": "def average(xs):\n    return sum(xs) / len(xs) if len(xs) > 0 else 0\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s2", "answer": "def top_students(scores, n):\n    \"\"\"scores is {name: marks}. Return the names of the n best students.\"\"\"\n    ranked = sorted(scores, key=lambda name: -scores[name])\n    return ranked[:n]\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s3", "answer": "def count_word(text, word):\n    return sum(1 for w in text.lower().split() if w.strip(\",.?\").startswith(word.lower()))\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s4", "answer": "def first_n(xs, n=3):\n    return xs[:n]\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s5", "answer": "def set_age(person, age):\n    if age < 0:\n        raise ValueError(\"Age cannot be negative\")\n    person[\"age\"] = age\n    return person\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s6", "answer": "def min_max(xs):\n    return {\"min\": min(xs), \"max\": max(xs)}\n", "valid": true, "retried": false, "sources": ""}
+{"id": "s7", "answer": "def total(values):\n    t = 0\n    for v in values:\n        if v is not None:\n            t += v\n    return t\n", "valid": true, "retried": false, "sources": ""}
+{"id": "i1", "answer": "    def withdraw(self, amount):\n        if self.balance - amount < 0:\n            return False\n        else:\n            self.balance -= amount\n            return True\n", "valid": true, "retried": false, "sources": ""}
+{"id": "p1", "answer": "from catalog import get_price\n\ndef label(sku):\n    return f\"{sku}: ${get_price(sku):.2f}\"\n", "valid": true, "retried": false, "sources": ""}
+{"id": "p2", "answer": "def apply_code(total_paise, code):\n    \"\"\"Return the total after applying a discount code.\"\"\"\n    if code in config.discount_codes:\n        total_paise -= total_paise * config.discount_codes[code]\n    return total_paise\n", "valid": false, "retried": true, "sources": ""}
+{"id": "p3", "answer": "from users import find_user\n\ndef display_name(users, email):\n    user = find_user(users, email)\n    if user:\n        return user[\"name\"]\n    else:\n        return 'unknown user'\n", "valid": true, "retried": false, "sources": ""}
+{"id": "p4", "answer": "from datetime import datetime\n\ndef days_between(a, b):\n    a = datetime.strptime(a, \"%Y-%m-%d\")\n    b = datetime.strptime(b, \"%Y-%m-%d\")\n    return (b - a).days\n", "valid": true, "retried": false, "sources": ""}

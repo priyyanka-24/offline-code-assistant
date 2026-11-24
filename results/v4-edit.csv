@@ -1,0 +1,13 @@
+id,type,passed,ttft_s,total_s,detail,valid,retried,sources
+s1,edit,True,15.09,15.09,,True,False,
+s2,edit,True,3.73,3.73,,True,False,
+s3,edit,True,2.81,2.81,,True,False,
+s4,edit,True,1.82,1.82,,True,False,
+s5,edit,True,2.75,2.75,,True,False,
+s6,edit,True,2.08,2.08,,True,False,
+s7,edit,True,2.53,2.53,,True,False,
+i1,edit,True,2.59,2.59,,True,False,
+p1,edit,False,5.88,5.88,AssertionError: pen: \u20b910.0,True,False,catalog.py:10-12;catalog.py:1-9
+p2,edit,False,5.66,5.66,AssertionError,True,False,config.py:1-4;money.py:9-13;money.py:1-4
+p3,edit,True,7.12,7.12,,True,True,users.py:9-15;users.py:1-2;users.py:5-6
+p4,edit,True,5.01,5.01,,True,False,records.py:1-6;dates.py:6-7;dates.py:1-5

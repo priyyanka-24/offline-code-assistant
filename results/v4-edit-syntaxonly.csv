@@ -1,0 +1,13 @@
+id,type,passed,ttft_s,total_s,detail,valid,retried,sources
+s1,edit,True,9.56,9.56,,True,False,
+s2,edit,True,3.87,3.87,,True,False,
+s3,edit,True,2.99,2.99,,True,False,
+s4,edit,True,1.83,1.83,,True,False,
+s5,edit,True,2.85,2.85,,True,False,
+s6,edit,True,2.15,2.15,,True,False,
+s7,edit,True,2.54,2.54,,True,False,
+i1,edit,True,2.72,2.72,,True,False,
+p1,edit,False,7.51,7.51,AssertionError: pen: \u20b910.0,True,False,catalog.py:10-12;catalog.py:1-9
+p2,edit,False,6.68,6.68,AssertionError,True,False,config.py:1-4;money.py:9-13;money.py:1-4
+p3,edit,False,4.76,4.76,NameError: name 'UserNotFound' is not defined,True,False,users.py:9-15;users.py:1-2;users.py:5-6
+p4,edit,True,5.97,5.97,,True,False,records.py:1-6;dates.py:6-7;dates.py:1-5

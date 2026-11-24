@@ -1,0 +1,4 @@
+time,event,language,lines,instruction_chars,seconds,valid,retried,model
+2026-11-24 20:18:50,rejected,c,21,17,13.83,,False,deepseek-coder:6.7b
+2026-11-24 20:19:58,accepted,c,18,26,9.91,,False,deepseek-coder:6.7b
+2026-11-24 21:16:54,accepted,c,12,30,18.64,,False,deepseek-coder:6.7b

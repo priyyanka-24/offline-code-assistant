@@ -1,0 +1,9 @@
+id,type,passed,ttft_s,total_s,detail
+x1,complete,True,0.76,10.76,
+x2,complete,False,0.68,9.93,AssertionError
+x3,debug,False,0.77,8.77,users.UserNotFound: nobody@example.com
+x4,debug,False,0.68,7.41,TypeError: fmt() needs whole paise as an int
+x5,explain,False,0.69,11.43,missing: 45.50
+x6,complete,False,0.76,8.14,"TypeError: string indices must be integers, not 'str'"
+x7,complete,False,0.67,6.44,KeyError: 'due_date'
+x8,debug,False,0.73,12.4,TypeError: in_stock() missing 1 required positional argument: 'qty'

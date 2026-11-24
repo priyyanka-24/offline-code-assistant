@@ -1,0 +1,19 @@
+id,type,passed,ttft_s,total_s,detail
+e1,explain,True,2.6,13.24,
+e2,explain,True,2.63,25.78,
+e3,explain,True,2.66,21.09,
+e4,explain,True,2.59,19.81,
+e5,explain,True,2.69,18.93,
+e6,explain,True,2.63,17.63,
+d1,debug,True,2.49,10.41,
+d2,debug,True,2.69,8.87,
+d3,debug,True,2.58,16.54,
+d4,debug,True,2.58,11.25,
+d5,debug,True,2.63,9.85,
+d6,debug,True,2.69,15.61,
+c1,complete,True,2.61,6.69,
+c2,complete,True,2.59,8.02,
+c3,complete,True,2.67,4.77,
+c4,complete,False,2.65,13.04,NameError: name 'roman' is not defined
+c5,complete,False,2.73,17.45,IndexError: list index out of range
+c6,complete,True,2.64,11.46,

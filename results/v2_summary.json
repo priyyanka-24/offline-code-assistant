@@ -1,0 +1,17 @@
+{
+  "tag": "v2",
+  "target": "server",
+  "model": "deepseek-coder:6.7b",
+  "questions": "benchmark.questions",
+  "rag": true,
+  "correct": 18,
+  "total": 18,
+  "by_type": {
+    "explain": "6/6",
+    "debug": "6/6",
+    "complete": "6/6"
+  },
+  "median_first_token_s": 0.71,
+  "median_total_s": 10.32,
+  "mean_total_s": 11.31
+}

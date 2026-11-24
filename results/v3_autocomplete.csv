@@ -1,0 +1,41 @@
+file,line,latency_ms,model_ms,exact,useful,similarity,expected,got
+eval.py,162,408,403,False,False,0.58,"wanted = set(args.only.split("",""))","wanted = [q[""id""] for q in questions if q[""id""] in args.only.split("","")]"
+eval.py,82,277,273,False,True,0.82,if chunk:,if not chunk:
+eval.py,202,594,587,False,False,0.47,"(RESULTS / f""{args.tag}_summary.json"").write_text(json.dumps(summary, indent=2))","with open(RESULTS / f""{args.tag}.json"", ""w"", encoding=""utf-8"") as f:"
+server/autocomplete.py,85,351,320,False,False,0.43,"""server_ms"": round((time.perf_counter() - t0) * 1000)}","""server_ms"": 0}"
+eval.py,55,443,434,False,True,0.81,"raise SystemExit(f""Ollama returned {r.status_code}: {r.read().decode(errors='ignore')}"")","raise RuntimeError(f""Ollama error: {r.status_code} {r.read().decode(errors='ignore')[:200]}"")"
+eval.py,185,271,263,True,True,1.0,w.writeheader(),w.writeheader()
+eval.py,168,10396,10387,False,False,0.4,""""".join(stream_ollama(""Say OK."", args.model))","ollama.run(args.model, ""import sys; sys.exit(0)"")"
+eval.py,194,391,384,False,False,0.72,"""tag"": args.tag, ""target"": args.target, ""model"": args.model,","""target"": args.target, ""model"": args.model, ""tag"": args.tag,"
+benchmark/project/catalog.py,17,178,174,True,True,1.0,"return PRODUCTS[sku][""qty_left""] >= qty","return PRODUCTS[sku][""qty_left""] >= qty"
+eval.py,107,441,434,False,False,0.43,"with_entry = [b for b in blocks if f""def {entry}"" in b]",if entry in blocks:
+eval.py,153,286,278,True,True,1.0,args = ap.parse_args(),args = ap.parse_args()
+server/rag.py,143,339,332,True,True,1.0,self.chunks: list[Chunk] = [],self.chunks: list[Chunk] = []
+server/rag.py,10,306,301,False,False,0.24,"(e.g. it calls get_price(), so fetch the get_price chunk)",(Python: `ast`; other languages: 60-line windows overlapping by 10).
+server/autocomplete.py,74,276,270,True,True,1.0,return text,return text
+eval.py,4,689,683,False,False,0.65,python eval.py --target server --tag v1      # v1+: go through the FastAPI backend,python eval.py --target ollama --tag v1      # v1: ask the model to explain
+server/autocomplete.py,35,167,156,False,False,0.03,"""codellama"": (""<PRE> {prefix} <SUF>{suffix} <MID>"", [""<EOT>""]),",""""
+server/rag.py,201,341,328,False,True,0.88,h = hashlib.sha1(src.encode()).hexdigest(),"h = hashlib.sha256(src.encode(""utf-8"")).hexdigest()"
+server/rag.py,153,414,406,False,False,0.21,"data = json.loads(meta.read_text(encoding=""utf-8""))",with self.lock:
+server/autocomplete.py,72,312,302,False,False,0.49,if first_after and text.endswith(first_after):,"if first_after == suffix.split(""\n"", 1)[0].strip():"
+server/autocomplete.py,116,269,262,False,False,0.38,"w.writerow({""time"": time.strftime(""%Y-%m-%d %H:%M:%S""), **row})",w.writerow(row)
+server/rag.py,86,823,815,False,False,0.31,assigned[t.id] = node.lineno,if t.id not in assigned:
+samples/report.py,6,293,284,False,True,0.87,"passed = [name for name, p in marks.items() if letter_grade(p) != ""F""]","passed = [name for name, score in marks.items() if letter_grade(score) == ""pass""]"
+samples/demo.py,17,127,121,True,True,1.0,"return ""C""","return ""C"""
+server/rag.py,126,662,654,False,False,0.16,vecs = [],"if kind == ""search_document"":"
+server/autocomplete.py,33,174,164,False,False,0.06,"""deepseek"": (""<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>"",",""", """
+server/rag.py,58,357,350,False,False,0.69,"return f""{self.path}:{self.start}-{self.end}""","return f""{self.start}-{self.end}: {self.text[:10]}"""
+server/rag.py,74,714,710,False,True,0.82,"if isinstance(node, ast.ClassDef):","if isinstance(node, ast.FunctionDef):"
+server/rag.py,268,281,276,False,False,0.38,if fresh:,if key not in _indexes:
+samples/demo.py,18,168,163,False,False,0.13,"return ""F""",else:
+server/autocomplete.py,99,325,311,True,True,1.0,data = r.json(),data = r.json()
+eval.py,178,758,754,False,True,0.84,"""ttft_s"": round(ttft, 2), ""total_s"": round(total, 2), ""detail"": detail})","""ttft_s"": ttft, ""total_s"": total, ""detail"": detail})"
+eval.py,161,300,296,True,True,1.0,if args.only:,if args.only:
+eval.py,126,479,470,True,True,1.0,"return False, ""timeout""","return False, ""timeout"""
+server/rag.py,98,262,255,False,False,0.46,"return sorted(chunks, key=lambda c: c.start)",return chunks
+eval.py,44,665,661,False,False,0.19,"""stream"": True,","""options"": {""temperature"": 0, ""seed"": 42, ""num_ctx"": 4096},"
+benchmark/project/catalog.py,6,289,284,False,True,0.82,"""ruler"":    {""price"": 1500, ""qty_left"": 4},","""pencil"":   {""price"": 1000, ""qty_left"": 100},"
+server/rag.py,87,517,510,False,False,0.23,run: list[int] = [],"elif isinstance(node, (ast.Import, ast.ImportFrom)):"
+eval.py,167,656,652,True,True,1.0,"if args.target == ""ollama"":","if args.target == ""ollama"":"
+server/rag.py,52,747,744,True,True,1.0,end: int             # 1-based last line,end: int             # 1-based last line
+server/rag.py,145,354,349,False,False,0.78,"self.hashes: dict[str, str] = {}",self.hashes: list[str] = []

@@ -1,0 +1,17 @@
+{
+  "tag": "v1-cross",
+  "target": "server",
+  "model": "deepseek-coder:6.7b",
+  "questions": "benchmark.crossfile",
+  "rag": false,
+  "correct": 1,
+  "total": 8,
+  "by_type": {
+    "complete": "1/4",
+    "debug": "0/3",
+    "explain": "0/1"
+  },
+  "median_first_token_s": 0.71,
+  "median_total_s": 9.35,
+  "mean_total_s": 9.41
+}
