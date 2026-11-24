@@ -1,0 +1,55 @@
+{
+  "name": "local-ai-assistant",
+  "displayName": "Local AI Coding Assistant",
+  "description": "Explain and debug code with a local model (Ollama). Your code never leaves your laptop.",
+  "version": "0.4.0",
+  "publisher": "miniproject",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages", "Other"],
+  "main": "./out/extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "localAssistant.explain", "title": "Explain Code", "category": "Local AI" },
+      { "command": "localAssistant.debug", "title": "Find Bug", "category": "Local AI" },
+      { "command": "localAssistant.edit", "title": "Change Code", "category": "Local AI" },
+      { "command": "localAssistant.reindex", "title": "Rebuild Project Index", "category": "Local AI" },
+      { "command": "localAssistant.toggleAutocomplete", "title": "Toggle Autocomplete", "category": "Local AI" }
+    ],
+    "menus": {
+      "editor/context": [
+        { "command": "localAssistant.explain", "group": "localAI@1" },
+        { "command": "localAssistant.debug", "group": "localAI@2" },
+        { "command": "localAssistant.edit", "group": "localAI@3", "when": "editorHasSelection" }
+      ]
+    },
+    "keybindings": [
+      { "command": "localAssistant.edit", "key": "ctrl+alt+e", "mac": "cmd+alt+e",
+        "when": "editorTextFocus && editorHasSelection" }
+    ],
+    "configuration": {
+      "title": "Local AI Assistant",
+      "properties": {
+        "localAssistant.serverUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8000",
+          "description": "Address of the FastAPI backend."
+        },
+        "localAssistant.autocomplete": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show grey inline suggestions while typing (Tab to accept)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.5"
+  }
+}
