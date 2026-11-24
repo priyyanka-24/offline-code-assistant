@@ -1,0 +1,27 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Extension build output and packages (recreated with npm install / npm run compile)
+extension/node_modules/
+extension/out/
+*.vsix
+
+# Project search index (rebuilt automatically)
+.assistant_index/
+
+# Report, slides and other documents (kept private)
+*.docx
+*.doc
+*.pdf
+*.pptx
+~$*
+
+# Other projects in this folder
+BPSK_Lab/
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
